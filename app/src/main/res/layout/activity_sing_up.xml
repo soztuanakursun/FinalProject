@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SingUp">
+
+
+
+
+    <TextView
+        android:id="@+id/SingUPTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Sing Up For  LUMOS"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+
+
+
+
+           <EditText
+               android:id="@+id/name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:hint="Name">
+
+
+           </EditText>
+
+           <EditText
+               android:id="@+id/surname"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:hint="Surname">
+
+
+           </EditText>
+
+           <EditText
+               android:id="@+id/email"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:hint="E-mail">
+
+
+           </EditText>
+
+           <EditText
+               android:id="@+id/pass"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:hint="Password"></EditText>
+
+           <EditText
+               android:id="@+id/rePass"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:hint="Re-Password">
+
+
+           </EditText>
+
+       <Button
+           android:id="@+id/OkMembership"
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:background="#fff"
+           android:textColor="#000"
+           android:layout_height="wrap_content"
+           android:text="MemberShip" />
+
+           <Button
+               android:id="@+id/Singup"
+               android:background="#0033cc"
+
+               android:textColor="#fff"
+               android:layout_marginTop="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sing Up" />
+
+        <TextView
+         android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+         android:layout_height="1dp"
+         android:background="#000" />
+
+           <TextView
+               android:id="@+id/textView3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="You Have Already Sing Up"
+               android:textAlignment="center"
+               android:textColor="#000"
+               android:textSize="18dp" />
+
+           <Button
+               android:id="@+id/SingIn"
+               android:background="#0033cc"
+
+               android:textColor="#fff"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sing In" />
+
+
+       </LinearLayout>
+       
+       
+       
+       
+
+

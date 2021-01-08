@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ProfileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Profile"
+            android:background="#0033cc"
+            android:textColor="#fff"
+            android:layout_weight="3"/>
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+              />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="1dp"
+        android:background="#000" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+              <TextView
+                  android:id="@+id/textView2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="All Projects"
+                  android:textAlignment="center"
+                  android:textColor="#000"
+                  android:textSize="30dp"/>
+              <TextView
+                  android:id="@+id/selects"
+                  android:layout_width="match_parent"
+                  android:layout_marginTop="10dp"
+                  android:layout_height="wrap_content"
+                  android:text="Please Select Project and Start It."
+                  android:textAlignment="center"
+                  android:textColor="#0033cc"
+                  android:textSize="20dp"/>
+              <TextView
+                  android:layout_width="match_parent"
+
+                  android:layout_height="1dp"
+                  android:background="#000" />
+              <Button
+                  android:id="@+id/AiProjectBtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="15dp"
+                  android:background="#0033cc"
+                  android:textColor="#fff"
+                  android:text="AI Projects" />
+              <Button
+                  android:id="@+id/WebProjectBtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="15dp"
+                  android:background="#0033cc"
+                  android:textColor="#fff"
+                  android:text="Web Projects" />
+              <Button
+                  android:id="@+id/IosProjectBtn"
+                  android:layout_width="match_parent"
+                  android:layout_marginTop="15dp"
+                  android:background="#0033cc"
+                  android:textColor="#fff"
+                  android:layout_height="wrap_content"
+                  android:text="Ios Projects" />
+              <Button
+                  android:id="@+id/MobileProjectBtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="#0033cc"
+                  android:textColor="#fff"
+                  android:layout_marginTop="15dp"
+                  android:text="Mobile Projects" />
+              <Button
+                  android:id="@+id/DatabaseProjectBtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:background="#0033cc"
+                  android:textColor="#fff"
+                  android:text="Database Projects" />
+
+              <Button
+                  android:id="@+id/CreateProjetBtn"
+
+                  android:layout_width="150dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="25dp"
+                  android:background="#00de1a"
+                  android:textColor="#fff"
+                  android:text="Create Project" />
+
+
+          </LinearLayout>
+
+
+
+
+</LinearLayout>

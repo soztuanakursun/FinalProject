@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".GrouopInformation">
+
+    <TextView
+        android:id="@+id/GroupTİtle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:text="Group Title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        />
+    <TextView
+        android:id="@+id/GroupDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+         android:textColor="#000"
+        android:text="Group Description and Information About That" />
+
+    <TextView
+        android:id="@+id/GroupMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="Group Members" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        />
+    <TextView
+        android:id="@+id/GroupMemberName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="Ali Veli" />
+
+    <TextView
+        android:id="@+id/GroupMemberName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:text="Söz Tuana Kurşun" />
+
+    <TextView
+        android:id="@+id/GroupMemberName2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:text="Mert Furkan Ergüden" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/GroupInfoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#f70529"
+
+            android:textColor="#fff"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/GroupAddMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0033cc"
+
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:text="Add New Member" />
+    </LinearLayout>
+</LinearLayout>

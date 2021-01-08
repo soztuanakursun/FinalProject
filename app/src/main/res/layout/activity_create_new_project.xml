@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CreateNewProject">
+
+    <TextView
+        android:id="@+id/createprojectText"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="Create a New Project " />
+
+    <EditText
+        android:id="@+id/projectName"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+       android:hint="Enter Project Name" />
+
+    <EditText
+        android:id="@+id/projectCat"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Categories of Project" />
+
+    <EditText
+        android:id="@+id/projectDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Project Description" />
+
+    <Button
+        android:id="@+id/createProject"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00de1a"
+        android:textColor="#fff"
+
+        android:text="Create Project" />
+</LinearLayout>
