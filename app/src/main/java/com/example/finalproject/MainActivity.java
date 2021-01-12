@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
     ImageView logo;
     TextView  forgotPass;
      Button singup, deneme,singIn;
-
+    //Database Instence
+    FirebaseDatabase database;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         MainPageDef();
         MainPageClick();
 
+    }
+    public void getInstanceFirebase(){
+        //get instance to firebase database. Login to Firebase
+        database = FirebaseDatabase.getInstance();
     }
     public void MainPageDef(){
         forgotPass = findViewById(R.id.forgotPass);
