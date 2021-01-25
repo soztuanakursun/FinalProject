@@ -1,5 +1,6 @@
 package com.example.finalproject;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,6 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class HomePage extends AppCompatActivity {
     Button ProfileBtn,
@@ -16,6 +21,12 @@ public class HomePage extends AppCompatActivity {
             MobileProjectBtn,
             DatabaseProjectBtn,
             CreateProjetBtn;
+    TextView welcome_user;
+    FirebaseDatabase firebaseDatabase;
+    FirebaseAuth fauth;
+     FirebaseAuth.AuthStateListener authstate;
+
+     // MErt wrote codes here!
 
 
     @Override
@@ -24,6 +35,32 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         ButtonsClick();
+        fauth = FirebaseAuth.getInstance();
+        authstate = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+
+                if(user==null){
+
+                    startActivity(new Intent(HomePage.this,MainActivity.class));
+                    finish();
+
+
+                }
+            }
+
+        };
+        //welcome_message(); Kullanıcı kodunu gösteren yerde hatalar var!!!!!!!
+
+
+
+    }
+    public void welcome_message(){
+        Intent intent = getIntent();
+        String username = "Welcome    " + intent.getStringExtra("name");
+        welcome_user.setText(username);
     }
 
     //AiProjectBtn Click
@@ -43,7 +80,7 @@ public class HomePage extends AppCompatActivity {
         AiProjectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Projects.class);
+                Intent intent = new Intent(getApplicationContext(),AiProjects.class);
                 startActivity(intent);
             }
         });
@@ -53,7 +90,7 @@ public class HomePage extends AppCompatActivity {
         WebProjectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Projects.class);
+                Intent intent = new Intent(getApplicationContext(),WebProjects.class);
                 startActivity(intent);
             }
         });
@@ -62,7 +99,7 @@ public class HomePage extends AppCompatActivity {
         IosProjectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Projects.class);
+                Intent intent = new Intent(getApplicationContext(),IOSProjects.class);
                 startActivity(intent);
             }
         });
@@ -71,16 +108,7 @@ public class HomePage extends AppCompatActivity {
         MobileProjectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Projects.class);
-                startActivity(intent);
-            }
-        });
-        //Database Projects
-        DatabaseProjectBtn= findViewById(R.id.DatabaseProjectBtn);
-        DatabaseProjectBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Projects.class);
+                Intent intent = new Intent(getApplicationContext(),MobileProjects.class);
                 startActivity(intent);
             }
         });

@@ -9,11 +9,28 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.StorageReference;
+
 public class MyFavoriteProjects extends AppCompatActivity {
     ImageView Favproject1img,Favproject2img,Favproject3img,Favproject4img;
     TextView Favproject1Title,Favproject2Title,Favproject3Title,Favproject4Title,
             Favproject1Des,Favproject2Des,Favproject3Des,Favproject4Des;
     Button Favback,FavMycreateProject;
+
+    FirebaseDatabase database;
+    FirebaseAuth auth;
+    FirebaseUser user;
+    DatabaseReference reference;
+    String Groups,Projects;
+    //Storage Referancedan birreferans oluşturduk
+    StorageReference storageReference;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +39,12 @@ public class MyFavoriteProjects extends AppCompatActivity {
                 FavProjectTextDef();
 
         FavprojectClick();
+        getInstanceFirebase();
     }
-
+    public void getInstanceFirebase(){
+        //get instance to firebase database. Login to Firebase
+        database = FirebaseDatabase.getInstance();
+    }
 
     public void FavProjectsImgDef(){
         //Tüm resimlere ulaştık
@@ -54,6 +75,10 @@ public class MyFavoriteProjects extends AppCompatActivity {
 
 
     }
+
+
+
+
     public void FavprojectClick(){
         //projelere tıklama olayı
         Favproject1Title.setOnClickListener(new View.OnClickListener() {

@@ -43,6 +43,15 @@
               android:padding="15dp">
 
               <TextView
+                  android:id="@+id/welcome_user"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+
+                  android:textColor="#000"
+                  android:textSize="30dp"/>
+
+              <TextView
                   android:id="@+id/textView2"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
@@ -96,14 +105,7 @@
                   android:textColor="#fff"
                   android:layout_marginTop="15dp"
                   android:text="Mobile Projects" />
-              <Button
-                  android:id="@+id/DatabaseProjectBtn"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_marginTop="10dp"
-                  android:background="#0033cc"
-                  android:textColor="#fff"
-                  android:text="Database Projects" />
+
 
               <Button
                   android:id="@+id/CreateProjetBtn"

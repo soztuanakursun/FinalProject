@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class Membership extends AppCompatActivity {
     TextView MembershipTitle,MembershipText;
+    // Tuana   wrote these codes,
     Button acceptMembership;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -18,7 +18,7 @@
          />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -27,7 +27,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -49,12 +49,14 @@
             android:text="Click Here to keep your account open"
             android:textColor="#000000" />
 
+
         <Switch
             android:id="@+id/switch1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="" />
+
 
     </LinearLayout>
 
@@ -68,6 +70,10 @@
 
         android:textColor="#fff"
         android:text="Sing In" />
+
+
+
+
 
     <TextView
         android:id="@+id/forgotPass"
@@ -89,6 +95,14 @@
         android:text="Don't Have a Account"
         android:textAlignment="center"
         android:textColor="#000000" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="#000"
+        android:background="#000"
+        >
+
+    </TextView>
     <Button
         android:id="@+id/singup"
         android:layout_marginTop="10dp"

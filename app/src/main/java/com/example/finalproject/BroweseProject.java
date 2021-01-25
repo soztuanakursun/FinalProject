@@ -14,6 +14,7 @@ public class BroweseProject extends AppCompatActivity {
     ImageView broweseImg;
     TextView broweseTitle,broweseDesc;
     Button addToFavorite,join,cancel;
+    // Tuana wrote these codes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +60,7 @@ public class BroweseProject extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Join the Project Gruop
-                Intent intent = new Intent(getApplicationContext(),Projects.class);
+                Intent intent = new Intent(getApplicationContext(),HomePage.class);
                 startActivity(intent);
             }
         });

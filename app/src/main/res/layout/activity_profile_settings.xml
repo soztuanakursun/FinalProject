@@ -30,7 +30,7 @@
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ali  " />
+        android:hint="Name" />
 
     <EditText
         android:id="@+id/UpdateSurname"
@@ -39,7 +39,7 @@
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Veli" />
+        android:hint="Surname" />
 
     <EditText
         android:id="@+id/UpdateCity"
@@ -48,16 +48,16 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="City/County" />
+        android:hint="City/County" />
 
     <EditText
-        android:id="@+id/UpdateCompany"
+        android:id="@+id/Job"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Company" />
+        android:hint="Company" />
 
     <EditText
         android:id="@+id/UpdateAboutMe"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="About Me" />
+        android:hint="About Me" />
 
     <Button
         android:id="@+id/Update"

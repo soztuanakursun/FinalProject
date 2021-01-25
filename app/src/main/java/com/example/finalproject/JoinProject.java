@@ -11,7 +11,8 @@ import android.widget.TextView;
 public class JoinProject extends AppCompatActivity {
     TextView JoinProjectText;
     Button joinNo,joinYes;
-
+        // Join here
+      // Tuana   wrote these codes,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,14 +28,14 @@ public class JoinProject extends AppCompatActivity {
 
 
 
-    }
+    } // Tuana   wrote these codes,
     public void joinProjectClick(){
         //No butonu
         joinNo =  findViewById(R.id.joinNo);
         joinNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),BroweseProject.class);
+                Intent intent = new Intent(getApplicationContext(),HomePage.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +44,7 @@ public class JoinProject extends AppCompatActivity {
         joinYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Projects.class);
+                Intent intent = new Intent(getApplicationContext(),ProfilePage.class);
                 startActivity(intent);
             }
         });

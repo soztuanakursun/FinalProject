@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyFavoriteProjects">
+
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:text="Mobile Android  Projects"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="62dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#de003f"
+            android:textColor="#fff"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/gotoprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:background="#00de1a"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+
+            <TextView
+                android:id="@+id/Favproject1Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mobile app"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/Favproject1Decs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Intorduction Kotlin  and Todo app  Description"
+                android:textColor="#000" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="#6f3ce6"
+                android:id="@+id/join1"
+                android:text="Join"></Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#000" />
+            <!-- 2.proje -->
+
+
+
+            <TextView
+                android:id="@+id/Favproject2Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Java app"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/Favproject2Decs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Java application  with Adnroid Studyo"
+                android:textColor="#000" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="#6f3ce6"
+                android:id="@+id/join2"
+                android:text="Join"></Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#000" />
+            <!-- 3.proje -->
+
+
+
+            <TextView
+                android:id="@+id/Favproject3Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="React Native app "
+
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/Favproject3Decs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="React native and Redux todo application Project Description"
+                android:textColor="#000" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="#6f3ce6"
+                android:id="@+id/join3"
+                android:text="Join"></Button>
+            <!-- 4.Proje -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+
+
+            <TextView
+                android:id="@+id/Favproject4Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Java Realtime application"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/Favproject4Decs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Java realtime applicatioon using  Socket.io  Project"
+                android:textColor="#000" />
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/join4"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="#6f3ce6"
+                android:text="Join"></Button>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

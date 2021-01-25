@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class ConfirmPassword extends AppCompatActivity {
     Button ConfirmPasswordBtn;
     TextView ConfirmPasswordText;
-
+    //   // Tuana   wrote these codes,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
